@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #005b9f;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  display: none;
+  padding: 2rem 5%; /* Tambahkan padding samping */
+  box-sizing: border-box;
+}
+
+section.active {
+  display: block;
+  opacity: 1;
+}
+
+footer {
+  background: #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.news-item {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.news-item h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.news-item p {
+  margin: 0.25rem 0;
+}
+
+/* Gambar pada halaman detail berita */
+#detail1 img,
+#detail2 img,
+#detail3 img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ukuran video di modal */
+#videoModal video {
+  max-width: 90%;
+  max-height: 80vh;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
